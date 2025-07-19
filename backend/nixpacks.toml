@@ -1,0 +1,13 @@
+provider = "python"
+
+[phases.setup]
+nixPkgs = ["...", "python310"]
+
+[phases.install]
+cmds = ["pip install -r requirements.txt"]
+
+[phases.build]
+cmds = ["echo 'No build step needed for Flask'"]
+
+[start]
+cmd = "python app.py"

@@ -14,14 +14,26 @@
 2. **Sign up/Login** with your GitHub account
 3. **Create New Project** → **Deploy from GitHub repo**
 4. **Select**: `ANONYMOUSZED-beep/project-neer-dashboard`
-5. **Configure**:
-   - Root Directory: `backend`
-   - Build Command: `pip install -r requirements.txt`
-   - Start Command: `python app.py`
-6. **Environment Variables**:
+5. **IMPORTANT - Configure Service Settings**:
+   - Click on the service that was created
+   - Go to **Settings** tab
+   - Under **Source**, set **Root Directory**: `backend`
+   - Under **Build**, set **Build Command**: `pip install -r requirements.txt`
+   - Under **Deploy**, set **Start Command**: `python app.py`
+6. **Environment Variables** (if needed):
    - `PORT`: (Railway sets this automatically)
    - `GOOGLE_APPLICATION_CREDENTIALS`: (Add your Earth Engine credentials if needed)
-7. **Deploy** and note your Railway URL (e.g., `https://your-app.railway.app`)
+7. **Redeploy** and note your Railway URL (e.g., `https://your-app.railway.app`)
+
+### Step 1 Alternative: Fix Current Deployment
+
+If you want to fix the current deployment:
+1. Go to your Railway project settings
+2. Click on **Settings**
+3. Under **Source** section, set **Root Directory** to: `backend`
+4. Under **Build** section, set **Build Command** to: `pip install -r requirements.txt`
+5. Under **Deploy** section, set **Start Command** to: `python app.py`
+6. Click **Redeploy**
 
 ### Step 2: Deploy Frontend to Vercel
 
