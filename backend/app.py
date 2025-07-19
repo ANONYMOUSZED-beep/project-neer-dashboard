@@ -1071,7 +1071,6 @@ def get_pollution_recommendations(risk_score, urban_percent, industrial_percent)
     return recommendations
 
 if __name__ == '__main__':
-    app.run(debug=True)
-
-if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    # Use environment variable for port (required for Railway/Heroku)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=False)
