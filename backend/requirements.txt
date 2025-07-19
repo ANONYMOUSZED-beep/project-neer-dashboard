@@ -1,0 +1,7 @@
+Flask==2.3.2
+Flask-CORS==4.0.0
+earthengine-api==0.1.356
+pandas==1.5.3
+geopandas==0.13.0
+numpy==1.24.3
+geemap==0.20.0
